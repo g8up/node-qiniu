@@ -37,9 +37,8 @@
   },
   "dependencies": {
     "bluebird": "^2.10.2",
-    "bufferhelper": "^0.2.0",
+    "request": "~2.66.0",
     "q": "~0.9.6",
-    "request": "~2.27.0",
     "underscore": "~1.5.1"
   },
   "devDependencies": {
