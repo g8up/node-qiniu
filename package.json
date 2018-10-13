@@ -1,6 +1,6 @@
 {
   "name": "node-qiniu",
-  "version": "6.1.0",
+  "version": "6.2.0",
   "description": "Qiniu Resource Storage SDK for Node.js",
   "main": "index.js",
   "directories": {
@@ -8,11 +8,20 @@
     "test": "test"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "blanket": {
+      "pattern": "node-qiniu/lib",
+      "data-cover-flags": {
+        "debug": false
+      }
+    },
+    "travis-cov": {
+      "threshold": 88
+    }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iwillwen/nodejs-sdk"
+    "url": "https://www.npmjs.org/package/node-qiniu"
   },
   "keywords": [
     "cloud",
@@ -24,17 +33,21 @@
   "author": "iwillwen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iwillwen/nodejs-sdk/issues"
+    "url": "https://www.npmjs.org/package/node-qiniu/issues"
   },
   "dependencies": {
-    "underscore": "~1.5.1",
-    "request": "~2.27.0",
+    "bluebird": "^2.10.2",
+    "bufferhelper": "^0.2.0",
     "q": "~0.9.6",
-    "dataStream": "0.0.5"
+    "request": "~2.27.0",
+    "underscore": "~1.5.1"
   },
   "devDependencies": {
     "async": "~0.2.9",
     "mocha": "~1.6.0",
-    "should": "~1.2.2"
+    "should": "~1.2.2",
+    "doxmate": "*",
+    "blanket": "*",
+    "travis-cov": "*"
   }
 }
