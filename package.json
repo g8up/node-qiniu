@@ -8,16 +8,16 @@
     "test": "test"
   },
   "scripts": {
-    "test": "make test",
-    "blanket": {
-      "pattern": "node-qiniu/lib",
-      "data-cover-flags": {
-        "debug": false
-      }
-    },
-    "travis-cov": {
-      "threshold": 88
+    "test": "make test"
+  },
+  "blanket": {
+    "pattern": "node-qiniu/lib",
+    "data-cover-flags": {
+      "debug": false
     }
+  },
+  "travis-cov": {
+    "threshold": 88
   },
   "repository": {
     "type": "git",
@@ -37,8 +37,8 @@
   },
   "dependencies": {
     "bluebird": "^2.10.2",
-    "request": "~2.66.0",
     "q": "~0.9.6",
+    "request": "^2.88.0",
     "underscore": "~1.5.1"
   },
   "devDependencies": {
